@@ -1,0 +1,11 @@
+replica_count: 2
+containerPort: 80
+image: nginx
+app: nginx-app
+deployment_name: nginx-app-deploy
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 80
+  name: nginx-app-service
